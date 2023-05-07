@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta  charset="UTF-8">
+    <title>Transactions Grouped by Category</title>
+    <link rel="stylesheet" href="/stylesheets/transactions.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqFjcJ6pajs/rfdfs3SO+kD4Ck5BdPtF+to8xMp9MvcxF" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Transactions Grouped by Category for <%= user.username %></h1>
+    <table  class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Category </th>
+          <th>Total Amount</th>
+        </tr>
+      </thead> 
+      <tbody>
+        <% transactionsByCategory.forEach((transactionGroup) => { %>
+          <tr>
+            <td><%= transactionGroup._id %></td>
+            <td><%= transactionGroup.totalAmount.toFixed(2) %></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+    <a href="/transactions" class="btn btn-primary">Back to Transaction Table</a>
+  </body>
+  </html>

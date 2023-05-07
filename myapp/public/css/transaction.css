@@ -1,0 +1,61 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #f8f9fa;
+  }
+  
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  .btn {
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .delete-btn,
+  .edit-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    /* line-height: 40px; */
+    text-align: center;
+  }
+  
+  .delete-btn i,
+  .edit-btn i {
+    display: inline-block;
+    vertical-align: middle;
+    }
+
+  .delete-btn i {
+    color: #00aaff;
+  }
+  
+  .edit-btn i {
+    color: #00aaff;
+  }
+  
+  tbody td {
+    vertical-align: middle;
+  }
